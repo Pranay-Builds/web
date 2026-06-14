@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[#0b0b0b] text-white relative overflow-hidden">
+    <main className="min-h-screen bg-[#0b0b0b] text-white relative overflow-hidden">
 
       {/* subtle overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/80" />
@@ -13,8 +13,9 @@ export default function Home() {
         <div className="flex flex-col sm:flex-row sm:items-center gap-4">
           <Image
             src="/pranay1.png"
-            alt="Pranay"
+            alt="Pranay Srivastava"
             width={64}
+            priority
             height={64}
             className="rounded-full border border-white/20 self-start sm:self-auto"
             draggable={false}
@@ -39,6 +40,8 @@ export default function Home() {
           <a
             href="mailto:srivastavapranay04@gmail.com"
             className="bg-white text-black px-5 py-2 rounded-full font-medium hover:opacity-80 transition"
+            rel="me noopener noreferrer"
+            aria-label="Email Pranay Srivastava"
           >
             Contact
           </a>
@@ -46,8 +49,8 @@ export default function Home() {
           <a
             href="https://github.com/Pranay-Builds"
             target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition"
+            rel="me noopener noreferrer"
+            aria-label="Visit Pranay Srivastava's GitHub profile"
           >
             GitHub
           </a>
@@ -55,24 +58,26 @@ export default function Home() {
           <a
             href="https://instagram.com/prnysrivastava"
             target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition"
+            rel="me noopener noreferrer"
+            aria-label="Visit Pranay Srivastava's Instagram profile"
           >
             Instagram
           </a>
 
-          <a
-            href="https://x.com/prnysrivastava"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-400 hover:text-white transition"
-          >
+<a
+  href="https://x.com/prnysrivastava"
+  target="_blank"
+  rel="me noopener noreferrer"
+  aria-label="Visit Pranay Srivastava's Twitter profile"
+>
             Twitter
           </a>
 
           <a
             href="/posts"
             className="text-gray-400 hover:text-white transition"
+             rel="me noopener noreferrer"
+  aria-label="View Pranay Srivastava's posts"
           >
             Writing
           </a>
@@ -81,13 +86,16 @@ export default function Home() {
 
 
       {/* ABOUT */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 pb-24">
+      <section
+        aria-labelledby="about-heading"
+        className="relative z-10 max-w-4xl mx-auto px-6 pb-24"
+      >
 
         <div className="p-6 bg-white/5 border border-white/10 rounded-2xl backdrop-blur">
 
-          <p className="text-sm text-gray-400 mb-3 tracking-wide">
+          <h2 id="about-heading" className="text-sm text-gray-400 mb-3 tracking-wide">
             ABOUT
-          </p>
+          </h2>
 
           <p className="text-gray-300 leading-relaxed">
             I'm a young entrepreneur from India
@@ -103,36 +111,39 @@ export default function Home() {
 
         </div>
 
-      </div>
+      </section>
 
       {/* CURRENT */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 pb-24">
+      <section
+        aria-labelledby="currently-heading"
+        className="relative z-10 max-w-4xl mx-auto px-6 pb-24"
+      >
 
         <div className="p-6 bg-white/5 border border-white/10 rounded-2xl backdrop-blur">
 
-          <p className="text-sm text-gray-400 mb-3 tracking-wide">
+          <h2 className="text-sm text-gray-400 mb-3 tracking-wide">
             CURRENTLY
-          </p>
+          </h2>
 
           <div className="space-y-3 text-gray-300">
 
             <div className="flex items-center gap-3">
-              
+
               Building Curio
             </div>
 
             <div className="flex items-center gap-3">
-            
+
               Growing For Real
             </div>
 
             <div className="flex items-center gap-3">
-          
+
               Learning how to build better products
             </div>
 
             <div className="flex items-center gap-3">
-             
+
               Shipping products every 1–2 weeks
             </div>
 
@@ -140,11 +151,11 @@ export default function Home() {
 
         </div>
 
-      </div>
+      </section>
 
 
       {/* PROJECTS */}
-      <div className="relative z-10 max-w-4xl mx-auto px-6 pb-24">
+      <section aria-labelledby="projects-heading" className="relative z-10 max-w-4xl mx-auto px-6 pb-24">
 
         <h2 className="text-3xl md:text-4xl font-semibold tracking-tight">
           Projects
@@ -232,7 +243,7 @@ export default function Home() {
 
           </div>
         </div>
-      </div>
+      </section>
 
 
       <div className="relative z-10 text-center py-8 text-sm text-gray-400">
@@ -249,6 +260,6 @@ export default function Home() {
         © {new Date().getFullYear()} Pranay Srivastava
       </div>
 
-    </div>
+    </main>
   );
 }

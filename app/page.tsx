@@ -111,28 +111,28 @@ export default function Home() {
         <div className="p-6 bg-white/5 border border-white/10 rounded-2xl backdrop-blur">
 
           <p className="text-sm text-gray-400 mb-3 tracking-wide">
-            CURRENT
+            CURRENTLY
           </p>
 
           <div className="space-y-3 text-gray-300">
 
             <div className="flex items-center gap-3">
-              <span className="h-2 w-2 rounded-full bg-green-500" />
+              
               Building Curio
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="h-2 w-2 rounded-full bg-green-500" />
+            
               Growing For Real
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="h-2 w-2 rounded-full bg-green-500" />
+          
               Learning how to build better products
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="h-2 w-2 rounded-full bg-green-500" />
+             
               Shipping products every 1–2 weeks
             </div>
 

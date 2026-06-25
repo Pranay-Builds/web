@@ -75,11 +75,10 @@ export default function Home() {
 
           <a
             href="/posts"
-            className="text-gray-400 hover:text-white transition"
              rel="me noopener noreferrer"
   aria-label="View Pranay Srivastava's posts"
           >
-            Writing
+            Posts
           </a>
         </div>
       </div>

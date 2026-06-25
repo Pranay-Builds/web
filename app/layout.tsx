@@ -1,11 +1,43 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+})
+
+const switzer = localFont({
+  src: [
+    {
+      path: "../public/fonts/Switzer-Regular.woff2",
+      weight: "400",
+      style: "normal"
+    },
+    {
+      path: "../public/fonts/Switzer-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Switzer-Semibold.woff2",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Switzer-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/Switzer-Extrabold.woff2",
+      weight: "800",
+      style: "normal",
+    },
+  ],
+  variable: "--font-switzer",
 })
 
 export const metadata: Metadata = {
@@ -41,7 +73,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} h-full antialiased`}
+      className={`${switzer.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <script
         type="application/ld+json"

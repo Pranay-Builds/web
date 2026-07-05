@@ -56,7 +56,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://instagram.com/prnysrivastava"
+            href="https://instagram.com/pranaysrivastava_07"
             target="_blank"
             rel="me noopener noreferrer"
             aria-label="Visit Pranay Srivastava's Instagram profile"

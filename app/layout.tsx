@@ -89,6 +89,7 @@ export default function RootLayout({
               "https://github.com/Pranay-Builds",
               "https://x.com/prnysrivastava",
               "https://instagram.com/prnysrivastava",
+              "https://instagram.com/pranaysrivastava_07",
               "https://instagram.com/pranay._srivastava"
             ]
           })

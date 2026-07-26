@@ -12,11 +12,11 @@ export default function Home() {
 
         <div className="flex flex-col sm:flex-row sm:items-center gap-4">
           <Image
-            src="/pranay1.png"
+            src="/pranayyy.png"
             alt="Pranay Srivastava"
-            width={64}
+            width={72}
             priority
-            height={64}
+            height={72}
             className="rounded-full border border-white/20 self-start sm:self-auto"
             draggable={false}
           />
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
 
         <p className="text-gray-400 mt-4 text-lg">
-          Making products people actually use
+          Building internet things, one at a time.
         </p>
 
         <p className="text-gray-500 mt-4 max-w-xl leading-relaxed">
@@ -97,7 +97,7 @@ export default function Home() {
           </h2>
 
           <p className="text-gray-300 leading-relaxed">
-            I'm a young entrepreneur from India
+            I'm a young builder from India
             <br></br>
             I care about building things that feel simple and useful.
             <br /><br />
@@ -132,8 +132,12 @@ export default function Home() {
             </div>
 
             <div className="flex items-center gap-3">
+              Reading books on entreprenship, and learning to write better
+            </div>
 
-              Growing For Real
+            <div className="flex items-center gap-3">
+
+              Trying to grow For Real
             </div>
 
             <div className="flex items-center gap-3">
@@ -187,7 +191,7 @@ export default function Home() {
 
               <div className="flex items-center justify-between gap-3">
                 <h3 className="text-lg font-medium group-hover:text-white transition">
-                  For Real - anonymous q&a (Launched 4 June 2026)
+                  For Real - anonymous q&a 
                 </h3>
               </div>
 

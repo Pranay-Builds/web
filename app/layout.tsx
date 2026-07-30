@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -7,6 +7,11 @@ import "./globals.css";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+})
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: "--font-jakartaSans",
+  subsets: ["latin"]
 })
 
 const switzer = localFont({
